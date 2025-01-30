@@ -3,44 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games - My Game Site</title>
+    <title>Example 1</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
+            padding: 20px;
+            background-color: #1a1a1a;
             color: #fff;
-            padding: 1rem;
-            text-align: center;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 1rem;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        main {
-            padding: 2rem;
-            background-color: #fff;
-        }
-        .game-container {
+        .iframe-container {
             width: 100%;
             max-width: 800px;
             margin: auto;
             background: #000;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
         }
-        .game-container iframe {
+        .iframe-container iframe {
             width: 100%;
             height: 450px;
             border: none;
@@ -50,43 +31,24 @@
             top: 10px;
             right: 10px;
             padding: 10px;
-            background-color: #fff;
+            background-color: #007BFF;
+            color: #fff;
             border: none;
             cursor: pointer;
-            z-index: 1;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        .fullscreen-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Games</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Free and Open-Source Games</h2>
-        <div class="game-container">
-            <iframe id="gameFrame" src="https://troid.isaacfonner.com/" title="Troid Game"></iframe>
-            <button class="fullscreen-button" onclick="openFullscreen()">Fullscreen</button>
-        </div>
-    </main>
-    <footer>
-        &copy; 2025 [Your Name]
-    </footer>
+    <h1>Example 1</h1>
+    <div class="iframe-container">
+        <iframe id="gameFrame" src="troid.issacfonner.com" title="Troid IssacFonner Game Site"></iframe>
+        <button class="fullscreen-button" onclick="openFullscreen()">Fullscreen</button>
+    </div>
     <script>
         function openFullscreen() {
             var elem = document.getElementById("gameFrame");
