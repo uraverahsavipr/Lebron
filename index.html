@@ -3,35 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Game Site</title>
+    <title>Home - My Game Site</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #1a1a1a;
+            color: #fff;
         }
         header {
             background-color: #333;
-            color: #fff;
             padding: 1rem;
             text-align: center;
         }
         nav ul {
             list-style-type: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
         }
         nav ul li {
             display: inline;
-            margin-right: 1rem;
         }
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
         }
         main {
             padding: 2rem;
-            background-color: #fff;
+            background-color: #222;
+            text-align: center;
+            border-top: 2px solid #444;
         }
         footer {
             background-color: #333;
@@ -41,6 +54,7 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+            border-top: 2px solid #444;
         }
     </style>
 </head>
@@ -50,8 +64,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="list.html">Game Sites</a></li>
             </ul>
         </nav>
     </header>
@@ -60,7 +74,7 @@
         <p>This site features a selection of free and open-source games for you to enjoy.</p>
     </main>
     <footer>
-        &copy; 2025 [Your Name]
+        &copy; 2025 Chris
     </footer>
 </body>
 </html>
