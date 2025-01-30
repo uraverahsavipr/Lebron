@@ -33,6 +33,17 @@
             padding: 2rem;
             background-color: #fff;
         }
+        .game-container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            background: #000;
+        }
+        .game-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
         footer {
             background-color: #333;
             color: #fff;
@@ -57,14 +68,13 @@
     </header>
     <main>
         <h2>Free and Open-Source Games</h2>
-        <ul>
-            <li><a href="https://examplegame1.com" target="_blank">Example Game 1</a></li>
-            <li><a href="https://examplegame2.com" target="_blank">Example Game 2</a></li>
-            <li><a href="https://examplegame3.com" target="_blank">Example Game 3</a></li>
-        </ul>
+        <div class="game-container">
+            <iframe src="https://examplegame.com/game.html" title="Example HTML5 Game"></iframe>
+        </div>
     </main>
     <footer>
         &copy; 2025 [Your Name]
     </footer>
 </body>
 </html>
+
