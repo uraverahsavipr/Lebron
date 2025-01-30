@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Loader</title>
+    <title>Game Sites</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,6 +16,22 @@
             color: #fff;
             padding: 1rem;
             text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+            background-color: #fff;
         }
         .button-container {
             display: flex;
@@ -36,19 +52,6 @@
         .button-container button:hover {
             background-color: #0056b3;
         }
-        .iframe-container {
-            width: 100%;
-            max-width: 800px;
-            margin: auto;
-            background: #000;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .iframe-container iframe {
-            width: 100%;
-            height: 450px;
-            border: none;
-        }
         footer {
             background-color: #333;
             color: #fff;
@@ -62,23 +65,26 @@
 </head>
 <body>
     <header>
-        <h1>Website Loader</h1>
+        <h1>Game Sites</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="list.html">Game Sites</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="button-container">
-        <button onclick="loadProxy('proxy.html?url=https://example1.com')">Example 1</button>
-        <button onclick="loadProxy('proxy.html?url=https://example2.com')">Example 2</button>
-        <button onclick="loadProxy('proxy.html?url=https://example3.com')">Example 3</button>
-    </div>
-    <div class="iframe-container">
-        <iframe id="websiteFrame" src="" title="Website Loader"></iframe>
-    </div>
+    <main>
+        <h2>Select a Game Site</h2>
+        <div class="button-container">
+            <button onclick="location.href='example1.html'">Example 1</button>
+            <button onclick="location.href='example2.html'">Example 2</button>
+            <button onclick="location.href='example3.html'">Example 3</button>
+        </div>
+    </main>
     <footer>
         &copy; 2025 [Your Name]
     </footer>
-    <script>
-        function loadProxy(url) {
-            document.getElementById('websiteFrame').src = url;
-        }
-    </script>
 </body>
 </html>
